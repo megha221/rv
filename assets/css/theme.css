@@ -1,0 +1,18 @@
+
+
+/* color theme for Blue*/
+
+.Blue-theme {
+  --Primary-color: #052501;
+  --Secondary-color: #ce3125;
+  --button-color: #262e8a;
+  --button-hover-color: #ce3125;
+  --button-text-color: #fff;
+  --button-text-hover-color: #fff;
+  --amenities-filter: invert(54%) sepia(55%) saturate(618%) hue-rotate(176deg)
+    brightness(95%) contrast(91%);
+}
+
+
+/* color theme for Purple*/
+
