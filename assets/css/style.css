@@ -1590,14 +1590,15 @@ h5 {
 #amenities .amenities-data {
   background: url(../images/amenities/Landing-Page-Pattern.webp) right / 100%
     100% no-repeat ;
-    background: linear-gradient(45deg, rgb(102,183,49), rgb(187,9,94), rgb(54,123,201));
+    /* background: linear-gradient(45deg, rgb(102,183,49), rgb(187,9,94), rgb(54,123,201)); */
+    background-color: #015c16;
 
   text-align: center;
   justify-content: center;
   color: #fff;
   width: 100%;
   /* max-width: 260px; */
-  height: 150px;
+  /* height: 1; */
   padding: 25px 30px 23px;
   border-radius: 22px;
   margin-bottom: 20px;
@@ -1606,6 +1607,7 @@ h5 {
 #amenities .amenities-data h6 {
   font-size: 14px;
   line-height: 18px;
+  color: white;
 }
 
 #amenities .amenities-data:hover {
@@ -3026,7 +3028,7 @@ footer .elementor-widget-container p {
     text-align: center;
     color: #fff;
     width: 174px;
-    height: 135px;
+    /* height: 135px; */
     padding: 15px;
     margin: 10px;
     border-radius: 22px;
@@ -3069,7 +3071,7 @@ footer .elementor-widget-container p {
     text-align: center;
     color: #fff;
     width: 153px;
-    height: 135px;
+    /* height: 135px; */
     padding: 10px;
     margin: -15px 8px 33px;
     border-radius: 22px;
@@ -3081,7 +3083,8 @@ footer .elementor-widget-container p {
   }
 
   #amenities .row .col-sm-6 {
-    width: 48%;
+    /* width: 48%; */
+    width: 100%;
   }
 
   .enquire-now {
@@ -3608,7 +3611,7 @@ footer .elementor-widget-container p {
     text-align: center;
     color: #fff;
     width: 260px;
-    height: 160px;
+    /* height: 160px; */
     padding: 30px;
     margin: 10px 0px;
     border-radius: 22px;
@@ -3666,13 +3669,15 @@ footer .elementor-widget-container p {
       100% 100% no-repeat rgb(255 255 255 / 15%);
     /* background-color: rgb(34 44 47); */
     /* background-color: ; */
-    background: linear-gradient(45deg, rgb(102,183,49), rgb(187,9,94), rgb(54,123,201));
+    /* background: linear-gradient(45deg, rgb(102,183,49), rgb(187,9,94), rgb(54,123,201)); */
+    background-color: #015c16;
+    color: white;
 
     text-align: center;
     color: #fff;
     /* width: 162px; */
     width: 100%;
-    height: 135px;
+    /* height: 135px; */
     padding: 18px;
     border-radius: 22px;
     opacity: 0.8;
@@ -6259,3 +6264,41 @@ border-radius: 10px;
 .special-page .relative  {text-align:center !important; }
 
 .special-page .footer {margin-top: 90px;}
+
+
+
+.faq {
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.25); */
+}
+
+.faq__title {
+  text-transform: uppercase;
+  color: #8b7197;
+}
+
+details {
+  background-color: #052501;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 20px 30px;
+  margin-block: 30px;
+}
+
+summary,
+p {
+  text-align: left;
+  /* color: white; */
+}
+
+summary {
+  margin-inline-start: 1rem;
+  list-style-position: outside;
+}
+
+summary::marker {
+  color: #8b7197;
+  font-size: 18px;
+}
