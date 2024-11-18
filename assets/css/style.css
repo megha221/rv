@@ -6280,11 +6280,17 @@ border-radius: 10px;
 }
 
 details {
-  background-color: #052501;
+  background-color: white;
   border-radius: 10px;
   cursor: pointer;
   padding: 20px 30px;
   margin-block: 30px;
+  border-radius: 2rem !important;
+    background: #9f9e9e22;
+    padding: 1.5rem 2rem;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1rem;
 }
 
 summary,
@@ -6299,12 +6305,16 @@ summary {
 }
 
 summary::marker {
-  color: #8b7197;
+  color: #015c16;
   font-size: 18px;
 }
 .faq summary{
-  color: white;
+  color: black;
 }
 .faq p{
-  color: white;
+  color: black;
+}
+
+.faq details:hover{
+background-color: #015c16;
 }
