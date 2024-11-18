@@ -6302,3 +6302,9 @@ summary::marker {
   color: #8b7197;
   font-size: 18px;
 }
+.faq summary{
+  color: white;
+}
+.faq p{
+  color: white;
+}
