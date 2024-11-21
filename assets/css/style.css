@@ -795,4 +795,12 @@ transform: translate(110%, 0%);
   .bgpink2 i {
     font-size: 2.5rem; /* Adjust this value as needed */
   }
+  .slick-slider1 img {
+    height: 300px; /* Set a fixed height for all images */
+    width: 100%; /* Ensure the images take up the full width of their container */
+    object-fit: cover; /* Ensures the images are cropped to fit the container while maintaining aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners to the images */
+  }
+  
+ 
   
