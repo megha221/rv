@@ -805,7 +805,8 @@ transform: translate(110%, 0%);
   
   .slick-slide img {
     width: 100%;
-    height: auto; /* Ensures the images keep their aspect ratio */
+    /* height: auto; Ensures the images keep their aspect ratio */
+    height: 300px;
   }
   .banner_green {
     background-image: url(https://cdn.propstory.com/magicpages/NAME/16iwl4kgyylps6cui2Graph_1126.jpg);
