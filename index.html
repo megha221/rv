@@ -449,8 +449,49 @@
         </div>
       </div>
     </section>
-
     <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="heading space-50 pb-5">
+              <h3 class="text-center">Gallery</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="slick-slider1">
+              <div class="element element-1 zoom">
+                <img src="https://images.unsplash.com/photo-1529313780224-1a12b68bed16?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gallery_img" class="img-fluid" />
+              </div>
+              <div class="element element-2 zoom">
+                <img src="https://www.rvpromotersanddevelopers.com/images/our-work/pic1.jpg" alt="gallery_img" class="img-fluid" />
+              </div>
+              <div class="element element-3 zoom">
+                <img src="https://www.rvpromotersanddevelopers.com/images/gallery/portrait/7.jpg" alt="gallery_img" class="img-fluid" />
+              </div>
+              <div class="element element-4 zoom">
+                <img src="https://www.rvpromotersanddevelopers.com/images/gallery.jpg" alt="gallery_img" class="img-fluid" />
+              </div>
+              <div class="element element-5 zoom">
+                <img src="./i6.jpeg" alt="gallery_img" class="img-fluid" />
+              </div>
+              <div class="element element-6 zoom">
+                <img src="./i5.jpeg" alt="gallery_img" class="img-fluid" />
+              </div>
+              <div class="element element-7 zoom">
+                <img src="./i4.jpeg" alt="gallery_img" class="img-fluid" />
+              </div>
+              <div class="element element-8 zoom">
+                <img src="./i1.jpeg" alt="gallery_img" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- <section id="gallery">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -524,7 +565,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section id="choose">
       <div class="container">
         <div class="row">
@@ -1347,7 +1388,7 @@
                 </div>
                 <div id="contactForm" name="contactForm" class="mt-3">
                   <div class="enq_form">
-                    <div class="row success_msg">
+                    <div class="row success_msg" style="color: white;">
                       <h4>
                         We appreciate your interest in our project. Our team
                         shall contact you very soon.
@@ -1553,6 +1594,38 @@
           setInterval(showModal, 30000);
         }, 30000); // Initial delay of 10 seconds
       });
+      $(document).ready(function(){
+  $('.slick-slider1').slick({
+    slidesToShow: 4,  // Show 4 images on larger screens
+    slidesToScroll: 1,
+    dots: true,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1200,  // For large devices (tablets and up)
+        settings: {
+          slidesToShow: 3,  // Show 3 images on medium screens
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 992,  // For medium devices (tablets)
+        settings: {
+          slidesToShow: 2,  // Show 2 images on smaller tablets
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 576,  // For small devices (phones)
+        settings: {
+          slidesToShow: 1,  // Show 1 image per slide on phones
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});
+
     </script>
 <script src="./assets/js/custom.js"></script>
 

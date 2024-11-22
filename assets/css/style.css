@@ -51,7 +51,7 @@ a:hover{
 
 .gradient_green{
     background-color: transparent;
-    background-color: #052501;
+    background-color: #4fb948;
 }
 
 .navbar-brand{
@@ -124,7 +124,7 @@ a:hover{
     color: #052501;
 }
 .banner_green{
-    background-color: #052501;
+    background-color: #4fb948;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -497,7 +497,7 @@ transform: translate(110%, 0%);
   
   
   .footer {
-      background-color: #052501;
+      background-color: #4fb948;
       color: #fff;
   }
   .footer-wave-svg {
@@ -795,6 +795,7 @@ transform: translate(110%, 0%);
   .bgpink2 i {
     font-size: 2.5rem; /* Adjust this value as needed */
   }
+  
   .slick-slider1 img {
     height: 300px; /* Set a fixed height for all images */
     width: 100%; /* Ensure the images take up the full width of their container */
@@ -802,5 +803,8 @@ transform: translate(110%, 0%);
     border-radius: 8px; /* Optional: Adds rounded corners to the images */
   }
   
+  .slick-slide img {
+    width: 100%;
+    height: auto; /* Ensures the images keep their aspect ratio */
+  }
  
-  
