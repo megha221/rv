@@ -2398,7 +2398,8 @@ h5 {
   background: var(--Primary-color);
   color: var(--button-text-color);
   border-radius: 6px;
-  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.26);
+  /* box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.26); */
+  background-color: #0db634;
   border: 1px solid var(--Primary-color);
 }
 
