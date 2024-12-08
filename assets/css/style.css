@@ -5300,3 +5300,110 @@ li{
   }
 }
 /* </style> */
+
+
+/* table */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.header button {
+  background: #ffd700;
+  border: none;
+  padding: 10px 20px;
+  color: #001e58;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-container {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #052501;
+  color: white;
+}
+
+.unlock-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4fb948;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.unlock-button svg {
+  margin-right: 5px;
+}
+
+.offer-note {
+  text-align: center;
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.images-container {
+  padding: 20px;
+}
+
+.images-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #28a745;
+}
+
+.actions button {
+  background: white;
+  color: #28a745;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  table, th, td {
+      font-size: 14px;
+  }
+
+  .actions {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
