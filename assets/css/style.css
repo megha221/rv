@@ -4957,7 +4957,7 @@ li{
 .footer .btn.btn-link {
   display: block;
   margin-bottom: 5px;
-  padding: 0;
+  /* padding: 0; */
   text-align: left;
   color: white;
   font-weight: normal;
