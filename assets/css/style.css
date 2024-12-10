@@ -250,7 +250,7 @@ transform: translate(110%, 0%);
     font-weight: 600;
     padding: 0.3rem 2rem;
     border: 0;
-    border-radius: 0.3rem;
+    border-radius: 20px;
     margin: 2rem 1rem 0 0;
 }
 .slick-slider11 .element{
@@ -5319,7 +5319,7 @@ body {
 }
 
 .header button {
-  background: #ffd700;
+  /* background: #ffd700; */
   border: none;
   padding: 10px 20px;
   color: #001e58;
@@ -5563,4 +5563,53 @@ a{
   background-repeat: no-repeat; /* Prevents the image from repeating */
   color: white; /* Ensures text is readable */
   padding: 20px; /* Adds padding for better spacing */
+}
+.nav-link.active {
+  font-weight: bold;
+  color: #4fb948 !important; /* Highlighted color */
+}
+
+
+.offer-note {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff5733; /* Bright color to grab attention */
+  text-align: center;
+  position: relative;
+  animation: pulse 1.5s infinite;
+}
+
+/* Sparkling animation effect */
+.offer-note::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70%);
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  animation: sparkle 1.5s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 0 0 5px #ff5733, 0 0 10px #ff5733, 0 0 20px #ff8e53;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff5733, 0 0 20px #ff8e53, 0 0 30px #ff8e53;
+  }
 }
