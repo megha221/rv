@@ -248,7 +248,7 @@ transform: translate(110%, 0%);
     background-color: #052501;
     color: white;
     font-weight: 600;
-    padding: 0.3rem 2rem;
+    /* padding: 0.3rem 2rem; */
     border: 0;
     border-radius: 20px;
     margin: 2rem 1rem 0 0;
@@ -4973,7 +4973,8 @@ li{
   font-weight: 900;
   /* color: var(--primary); */
   /* color: brown; */
-  color: #f48f26;
+  /* color: #f48f26; */
+  color: #e5bd94;
   margin-right: 10px;
 }
 
@@ -5158,80 +5159,8 @@ li{
   .testimonial-card {
       flex: 0 0 100%; /* 1 card per row on mobile */
   }
-}<div class="row form-sch align-items-center">
-<div class="col-lg-12">
-  <div class="text-center text-dark fs-4 mb-4">
-    <p><b>Schedule A Visit Now</b></p>
-  </div>
-  <div id="contactForm" name="contactForm" class="mt-3">
-    <div class="enq_form">
-      <div class="row success_msg">
-        <h4>We appreciate your interest in our project. Our team shall contact you soon!</h4>
-      </div>
-      <div class="row error_msg">
-        <h4>Sorry! Something went wrong. Please try again.</h4>
-      </div>
-      <div class="sidenav_form">
-        <form id="main-popup" name="modal-form" action="https://formspree.io/f/xgveyvjv" method="POST">
-          <div class="row">
-            <!-- Name Field -->
-            <div class="col-lg-12">
-              <div class="form-group mb-3">
-                <input
-                  type="text"
-                  class="form_control name"
-                  name="name"
-                  id="name"
-                  placeholder="Full Name"
-                  required
-                />
-              </div>
-            </div>
-            <!-- Phone Number Field -->
-            <div class="col-lg-12">
-              <div class="form-group mb-3">
-                <input
-                  type="tel"
-                  class="form_control phone"
-                  name="phone"
-                  id="phone"
-                  placeholder="Mobile Number"
-                  required
-                />
-              </div>
-            </div>
-            <!-- Email Field -->
-            <div class="col-lg-12">
-              <div class="form-group mb-3">
-                <input
-                  type="email"
-                  class="form_control email"
-                  name="email"
-                  id="email"
-                  placeholder="Email Address"
-                  required
-                />
-              </div>
-            </div>
-            <!-- Submit Button -->
-            <div class="col-lg-12">
-              <div class="form-group text-center">
-                <button
-                  type="submit"
-                  class="submit_button form_control mt-3 btnn shadow-lg fw-bold"
-                  style="padding: 15px 30px; background-color: #4CAF50; color: white; border: none; width: 100%; font-size: 1.1rem; border-radius: 8px; cursor: pointer;"
-                >
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+}
+
 
 /* <style> */
 /* General form styling */
@@ -5616,7 +5545,8 @@ a{
   }
 }
 .custom-icon-color {
-  color: rgb(244, 143, 38);
+  /* color: rgb(244, 143, 38); */
+  color: #e5bd94;
 }
 .bgpink2 {
   display: flex;
@@ -5625,4 +5555,136 @@ a{
 
 .bgpink2 i {
   margin-right: 8px; /* Adjust as needed */
+}
+.slick-slider11 .element {
+  margin: 10px; /* Space between the images */
+}
+
+.slick-slider11 .element img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-slider11 .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slider11 .slick-prev, .slick-slider11 .slick-next {
+  font-size: 30px;  /* Size of arrows */
+  color: white;     /* Arrow color */
+}
+
+.slick-slider11 .slick-dots {
+  bottom: -30px;    /* Position for dots */
+}
+.slick-slider11 .element {
+  margin: 10px; /* Space between images */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slider11 .element img {
+  width: 100%;          /* Ensure the image takes up full width */
+  height: 200px;        /* Fixed height for all images */
+  object-fit: cover;    /* Ensures the image covers the space without stretching */
+}
+
+.slick-slider11 .slick-prev, .slick-slider11 .slick-next {
+  font-size: 30px;  /* Size of arrows */
+  color: white;     /* Arrow color */
+}
+
+.slick-slider11 .slick-dots {
+  bottom: -30px;    /* Position for dots */
+}
+/* Container for the slick slider */
+.slick-slider11 {
+  position: relative; /* Ensure relative positioning for inner elements */
+}
+
+/* Style each slider element */
+.slick-slider11 .element {
+  margin: 10px;          /* Space between images */
+  display: flex;
+  flex-direction: column; /* Stack images and buttons vertically */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Image styling - Increase height here */
+.slick-slider11 .element img {
+  width: 100%;           /* Make images take up full width */
+  height: 300px;         /* Increased height for uniform images */
+  object-fit: cover;     /* Maintain aspect ratio */
+  border-radius: 8px;    /* Optional: round image corners */
+}
+
+/* Style for arrows */
+.slick-slider11 .slick-prev, .slick-slider11 .slick-next {
+  font-size: 30px;  /* Size of arrows */
+  color: white;     /* Arrow color */
+  background-color: rgba(0, 0, 0, 0.5);  /* Background for the arrows */
+  border-radius: 50%;  /* Circular arrows */
+  padding: 10px;
+  position: absolute;
+  bottom: -40px;   /* Move buttons below the images (adjust for new height) */
+  z-index: 10;     /* Ensure buttons are above the images */
+}
+
+.slick-slider11 .slick-prev {
+  left: 10px; /* Position 'previous' button to the left */
+}
+
+.slick-slider11 .slick-next {
+  right: 10px; /* Position 'next' button to the right */
+}
+
+/* Style for dots */
+.slick-slider11 .slick-dots {
+  bottom: -70px;   /* Adjust dot position below the images */
+  text-align: center;
+  /* margin-top: 2rem; */
+
+}
+
+/* Optional: Adjust dot styles */
+
+/* Container for individual elements (icon + text) */
+.bgpink2 {
+  display: flex;
+  align-items: center; /* Vertically align icon and text */
+  justify-content: flex-start; /* Align everything to the left */
+  padding: 10px; /* Add some padding for spacing */
+  
+  border-radius: 5px; /* Optional: to round corners */
+}
+
+/* Icon styling */
+.bgpink2 i {
+  font-size: 20px; /* Adjust icon size if needed */
+  margin-right: 10px; /* Space between icon and text */
+  color: #28a745; /* Icon color */
+}
+
+/* Text styling */
+.bgpink2 small {
+  font-size: 14px; /* Adjust text size */
+  color: #333; /* Text color */
+}
+
+/* For mobile view, ensure the elements are displayed properly */
+@media (max-width: 768px) {
+  .bgpink2 {
+    flex-direction: row; /* Align icons and text side by side */
+    justify-content: flex-start; /* Ensure text and icon are left-aligned */
+  }
+
+  /* Optionally, adjust icon size for smaller screens */
+  .bgpink2 i {
+    font-size: 18px;
+  }
 }
