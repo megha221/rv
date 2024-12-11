@@ -152,7 +152,7 @@ a:hover{
 .small_icons h4{
     font-weight: 700;
     padding: 1.5rem 0;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 .small_icons p{
     color: #45575B;
@@ -223,7 +223,7 @@ transform: translate(110%, 0%);
     width: 100%;
 }
 .modal-logo{
-    transform: translate(24%, -6%);
+    transform: translate(56%, -6%);
     width: 30%;
 }
 .slick-slider1 .element{
@@ -371,7 +371,7 @@ transform: translate(110%, 0%);
         height:100%;
         width:100%;
         display:inline-block;
-        margin:0px 10px;
+        /* margin:0px 10px; */
 
       }
 
@@ -2741,7 +2741,7 @@ h5 {
 
 #connectivity {
   position: relative;
-  padding: 80px 20px 60px;
+  /* padding: 80px 20px 60px; */
 }
 
 #connectivity p {
@@ -2947,7 +2947,7 @@ h5 {
 
 #contact {
   margin: 10px;
-  /*padding:50px 0px;*/
+  padding: 0px 0px 30px;
   background-color: #fff;
 }
 
@@ -5055,7 +5055,7 @@ li{
   display: block; /* Ensures the image behaves like a block element */
   margin: 0 auto; /* Centers the image horizontally */
   max-width: 100%; /* Makes the image responsive */
-  width: 175px; /* Set a default smaller size */
+  width: 105px; /* Set a default smaller size */
   height: auto; /* Maintain the aspect ratio */
   align-items: center;
 }
@@ -5714,4 +5714,49 @@ a{
 
 .modal-logo{
   /* height: 100px; */
+}/* Hide the text inside the previous and next buttons */
+/* Hide the text content in the previous and next buttons */
+.slick-prev, .slick-next {
+  text-indent: -9999px;  /* Remove the text by shifting it off-screen */
+  font-size: 30px;  /* Adjust size of arrows */
+  color: white;     /* Arrow color */
+  background-color: rgba(0, 0, 0, 0.5);  /* Background for the arrows */
+  border-radius: 50%;  /* Circular buttons */
+  padding: 10px;
+  position: absolute;
+  bottom: -40px;   /* Position below the image */
+  z-index: 10;     /* Make sure buttons are above images */
+}
+
+.slick-prev {
+  left: 10px; /* Position 'previous' button to the left */
+}
+
+.slick-next {
+  right: 10px; /* Position 'next' button to the right */
+}
+.footer-menu-name:hover{
+/* background-color: rgb(193, 93, 93); */
+cursor: pointer;
+}
+.social-menu ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.social-menu ul li {
+  margin-right: 15px; /* Adds space between icons */
+}
+
+.social-menu ul li a {
+  color: white; /* Set default color */
+  font-size: 24px; /* Adjust icon size */
+  text-decoration: none;
+}
+
+.social-menu ul li a:hover {
+  color: #e5bd94; /* Change color on hover, adjust as needed */
 }
