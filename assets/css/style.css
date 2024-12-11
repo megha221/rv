@@ -81,7 +81,7 @@ a:hover{
     padding: 0.7rem 2rem;
     background-color: #4fb948;
     font-weight: 700;
-    margin-top: 0.8rem;
+    /* margin-top: 0.8rem; */
 }
 .d-mob{
     display: none;
@@ -97,7 +97,7 @@ a:hover{
     text-align: left;
 }
 .p-left{
-    padding: 0 7rem 0 1rem;
+    padding: 0 1rem 0 1rem;
 }
 .p-right{
     padding: 0 5rem;
@@ -4971,7 +4971,9 @@ li{
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: var(--primary);
+  /* color: var(--primary); */
+  /* color: brown; */
+  color: #f48f26;
   margin-right: 10px;
 }
 
@@ -5052,7 +5054,7 @@ li{
   display: block; /* Ensures the image behaves like a block element */
   margin: 0 auto; /* Centers the image horizontally */
   max-width: 100%; /* Makes the image responsive */
-  width: 80px; /* Set a default smaller size */
+  width: 75px; /* Set a default smaller size */
   height: auto; /* Maintain the aspect ratio */
 }
 
@@ -5612,4 +5614,15 @@ a{
   50% {
     text-shadow: 0 0 10px #ff5733, 0 0 20px #ff8e53, 0 0 30px #ff8e53;
   }
+}
+.custom-icon-color {
+  color: rgb(244, 143, 38);
+}
+.bgpink2 {
+  display: flex;
+  align-items: center;
+}
+
+.bgpink2 i {
+  margin-right: 8px; /* Adjust as needed */
 }
